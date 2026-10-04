@@ -1,4 +1,4 @@
-name = "vcf" # todo
+name = "vlx" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
@@ -18,3 +18,18 @@ UUID = "5dc15e15-f285-4a9d-959b-0e4fbdd77999"
 [observability]
 enabled = true
 head_sampling_rate = 1
+redact_query_string = false
+
+[observability.logs]
+enabled = true
+head_sampling_rate = 1
+invocation_logs = true
+persist = true
+
+[observability.traces]
+enabled = false
+head_sampling_rate = 1
+persist = true
+
+[observability.issue_detection]
+enabled = true
