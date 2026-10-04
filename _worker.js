@@ -351,6 +351,7 @@ async function handleVlsRequest(request, customProxyIP) {
     let isTrojan = false;
     const earlyData = request.headers.get('sec-websocket-protocol') || '';
     const readable = makeReadableStr(serverSock, earlyData);
+	console.log('get Request came from');
 
     readable.pipeTo(new WritableStream({
         async write(chunk) {
@@ -394,7 +395,7 @@ async function handleVlsRequest(request, customProxyIP) {
             await forwardataTCP(hostname, port, rawData, serverSock, respHeader, remoteConnWrapper, customProxyIP);
         },
     })).catch((err) => {
-        // console.error('Readable pipe error:', err);
+        console.error('Readable pipe error:', err);
     });
 
     return new Response(null, { status: 101, webSocket: clientSock });
