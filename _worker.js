@@ -9,7 +9,7 @@ import { connect } from 'cloudflare:sockets';
 let subPath = 'link';     // 节点订阅路径,不修改将使用uuid作为订阅路径
 let password = '123456999';  // 主页密码,建议修改或添加 PASSWORD环境变量
 // let proxyIP = '83.147.217.103:1080';  // proxyIP
-let proxyIP = '';  
+//let proxyIP = '';  
 let yourUUID = '5dc15e15-f285-4a9d-959b-0e4fbdd77999'; // UUID,建议修改或添加环境便量
 let disabletro = false;  // 是否关闭trojan, 设置为true时关闭，false开启 
 
