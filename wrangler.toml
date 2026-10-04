@@ -1,4 +1,4 @@
-name = "vless-cf" # todo
+name = "vcf" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
@@ -14,3 +14,7 @@ compatibility_date = "2025-02-24"
 # API_HOST = "api.v2board.com"
 PASSWORD = "qwerasdf"
 UUID = "1b6c1745-992e-4aac-8685-266c090e50ea,89b64978-6244-4bf3-bf64-67ade4ce5c8f,d342d11e-d424-4583-b36e-524ab1f0afa4"
+
+[observability]
+enabled = true
+head_sampling_rate = 1
